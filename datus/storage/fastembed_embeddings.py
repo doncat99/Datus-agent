@@ -190,7 +190,7 @@ def check_snapshot(model_name: str, cache_dir: str) -> None:
     from huggingface_hub import snapshot_download
     from huggingface_hub.utils import disable_progress_bars
 
-    disable_progress_bars()
+    # disable_progress_bars()
 
     try:
         snapshot_download(repo_id, cache_dir=cache_dir, local_files_only=True)
